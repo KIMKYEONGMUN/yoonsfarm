@@ -314,16 +314,16 @@ img {
     margin-bottom: 10px;
 }
 .translation-links li a.korean {
-    background: url('/./image/kr.png') center center / 100% no-repeat;
+    background: url('./image/kr.png') center center / 100% no-repeat;
 }
 .translation-links li a.english {
-    background: url('/./image/en.png') center center / 100% no-repeat;
+    background: url('./image/en.png') center center / 100% no-repeat;
 }
 .translation-links li a.chinese {
-    background: url('/./image/cn.png') center center / 100% no-repeat;
+    background: url('./image/cn.png') center center / 100% no-repeat;
 }
 .translation-links li a.japanese {
-    background: url('/./image/jp.png') center center / 100% no-repeat;
+    background: url('./image/jp.png') center center / 100% no-repeat;
     margin-bottom: 0;
 }
 
@@ -456,7 +456,7 @@ img {
     height: 42vw;
     margin: 0 auto 200px;
     border-radius: 20px;
-    background: url('/./image/main_visual.png') center center / cover no-repeat;
+    background: url('./image/main_visual.png') center center / cover no-repeat;
     overflow: hidden;
     position: relative;
     transform: scale(0.9);
@@ -819,7 +819,7 @@ img {
     height: 42vw;
     margin: 0 auto 200px;
     border-radius: 20px;
-    background: url('/./image/main_banner.png') center center / cover no-repeat;
+    background: url('./image/main_banner.png') center center / cover no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
@@ -1356,7 +1356,7 @@ img {
     content: '';
     width: 100%;
     height: 100%;
-    background: url('/./image/map_bg1.png') center center / cover no-repeat;
+    background: url('./image/map_bg1.png') center center / cover no-repeat;
     position: absolute;
     top: -20px;
     right: -20px;
