@@ -456,7 +456,7 @@ img {
     height: 42vw;
     margin: 0 auto 200px;
     border-radius: 20px;
-    background: url('/./image/main_visual.png') center center / cover no-repeat;
+    background: url('../image/main_visual.png') center center / cover no-repeat;
     overflow: hidden;
     position: relative;
     transform: scale(0.9);
