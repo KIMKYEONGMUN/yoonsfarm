@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망농원</title>
+    <link rel="stylesheet" href="/css/aos-2.3.4.css">
+    <link rel="stylesheet" href="/css/swiper-bundle-11.0.5.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/lib/aos-2.3.4.js"></script>
+    <script src="/lib/swiper-bundle-11.0.5.min.js"></script>
+    <script src="/lib/jquery-3.7.1.min.js"></script>
+    <script src="/js/style.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                if (($('.main_product .item.grape').offset().top / 1.2) < $(window).scrollTop()) {
+                    $('.main_product .item.grape .painting_color').addClass('on');
+                } else {
+                    $('.main_product .item.grape .painting_color').removeClass('on');
+                };
+
+                if (($('.main_product .item.peach').offset().top / 1.2) < $(window).scrollTop()) {
+                    $('.main_product .item.peach .painting_color').addClass('on');
+                } else {
+                    $('.main_product .item.peach .painting_color').removeClass('on');
+                };
+
+                // if (($('.main_product .item.pepper').offset().top / 1.2) < $(window).scrollTop()) {
+                //     $('.main_product .item.pepper .painting_color').addClass('on');
+                // } else {
+                //     $('.main_product .item.pepper .painting_color').removeClass('on');
+                // };
+
+                if (($('.main_product .item.jeotgal').offset().top / 1.2) < $(window).scrollTop()) {
+                    $('.main_product .item.jeotgal .painting_color').addClass('on');
+                } else {
+                    $('.main_product .item.jeotgal .painting_color').removeClass('on');
+                };
+            });
+        })// jquery end
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <div class="left">
+                <h1><a href="/"><img src="/image/logo.png" alt="로고" /></a></h1>
+                <nav class="pc">
+                    <ul>
+                        <li class="depth1">
+                            <p>희망농원소개</p>
+                            <ul class="depth2">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">지나온길</a></li>
+                                <li><a href="#">둘러보기</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <p>희망유기농재배</p>
+                            <ul class="depth2">
+                                <li><a href="#">희망유기농재배</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <p>상품소개</p>
+                            <ul class="depth2">
+                                <li><a href="#">포　도</a></li>
+                                <li><a href="#">복숭아</a></li>
+                                <li><a href="#">가공식품</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <p>커뮤니티</p>
+                            <ul class="depth2">
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">고객상담</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- .left end -->
+
+            <div class="right">
+                <div class="member pc">
+                    <figure><img src="/image/user.png" alt="회원" /></figure>
+                    <ul>
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </div><!-- .member end -->
+                <a class="shop pc" href="#">
+                    <figure><img src="/image/cart.png" alt="장바구니" /></figure>
+                    <span>cart</span>
+                </a><!-- .shop end -->
+                <div class="lang">
+                    <figure><img src="/image/lang.png" alt="언어" /></figure>
+
+                    <div id="google_translate_element" style="display:none;"></div>
+                    <!-- "새 번역 링크 UI" -->
+                    <ul class="translation-links">
+                        <li><a href="JavaScript: location.reload(true);" class="korean" data-lang="ko"><!-- Korean --></a></li>
+                        <li><a href="javascript:void(0)" class="english" data-lang="en"><!-- English --></a></li>
+                        <li><a href="javascript:void(0)" class="chinese" data-lang="zh-CN"><!-- Chinese --></a></li>
+                        <li><a href="javascript:void(0)" class="japanese" data-lang="ja"><!-- Japanese --></a></li>
+                    </ul>
+                    <script type="text/javascript">
+                        /* 구글 번역 초기화 */
+                        function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'ko',autoDisplay: true}, 'google_translate_element');}
+                    </script>
+                    <script type="text/javascript">
+                        /* 새 UI 선택 클릭 이벤트가 발생하면
+                        감춤 처리한 구글 번역 콤보리스트에
+                        선택한 언어를 적용해 변경 이벤트를 발생시키는 코드  */
+                        document.querySelector('.translation-links').addEventListener('click',function(event) {
+                            let el = event.target;
+                            if(el != null){
+                                while(el.nodeName == 'FONT'){el = el.parentElement;}//data-lang 속성이 있는 태그 찾기
+                                const tolang = el.dataset.lang; // 변경할 언어 코드 얻기
+                                const gtcombo = document.querySelector('.goog-te-combo');
+                                if (gtcombo == null) {
+                                    alert("(번역대기)\nCtrl + F5 누른 후 다시 눌러주세요.\nPress Ctrl + F5 and then press it again.");
+                                    return false;
+                                }
+                                gtcombo.value = tolang; // 변경할 언어 적용
+                                gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
+                            }
+                            return false;
+                        });
+                    </script>
+                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                </div><!-- .lang end -->
+                <div class="menu mob">
+                    <figure><img src="/image/menu.png" alt="메뉴" /></figure>
+                    <p>menu</p>
+                </div><!-- .menu end -->
+            </div><!-- .right end -->
+
+        </div><!-- .inner end -->
+
+        <div class="nav_bg">
+            <div class="inner">
+                <figure><img src="/image/header1.png" alt="희망농원 전경" /></figure>
+                <figure><img src="/image/header2.png" alt="희망농원 전경" /></figure>
+                <figure><img src="/image/header3.png" alt="희망농원 전경" /></figure>
+                <figure><img src="/image/header4.png" alt="희망농원 전경" /></figure>
+            </div><!-- .inner end -->
+        </div><!-- .nav_bg end -->
+
+    </header><!-- .header end -->
+
+
+
+
+
+    <div class="menu_m">
+        <div class="top">
+            <div class="left">
+                <div class="member">
+                    <figure><img src="/image/user.png" alt="회원" /></figure>
+                    <ul>
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </div><!-- .member end -->
+                <a class="shop" href="#">
+                    <figure><img src="/image/cart.png" alt="장바구니" /></figure>
+                    <span>cart</span>
+                </a><!-- .shop end -->
+            </div><!-- .left end -->
+            <figure class="close"><img src="/image/close.png" alt="닫기" /></figure>
+        </div><!-- .top end -->
+
+        <nav>
+            <ul>
+                <li class="depth1">
+                    <p>희망농원소개</p>
+                    <ul class="depth2">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">지나온길</a></li>
+                        <li><a href="#">둘러보기</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">희망유기농재배</a>
+                </li>
+                <li class="depth1">
+                    <p>상품소개</p>
+                    <ul class="depth2">
+                        <li><a href="#">포　도</a></li>
+                        <li><a href="#">복숭아</a></li>
+                        <li><a href="#">가공식품</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <p>커뮤니티</p>
+                    <ul class="depth2">
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객상담</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </div><!-- .menu_m end -->
+
+
+
+
+
+    <div class="quick">
+        <div class="top"><img src="/image/quick_up.png" alt="위로가기" /></div><!-- .top end -->
+
+        <a href="#" class="my"><img src="/image/quick_user.png" alt="마이페이지" /></a>
+
+        <a href="#" class="cart"><img src="/image/quick_cart.png" alt="장바구니" /></a>
+
+        <div class="down"><img src="/image/quick_down.png" alt="아래로가기" /></div><!-- .down end -->
+
+    </div><!-- .quick end -->
+
+
+
+
+
+    <section class="main_visual">
+        <div class="text">
+            <span class="cursive_e">
+                By Yoon's<br />
+                Healing Farm
+            </span>
+            <p>
+                건강한 먹거리는 행복의 시작입니다<br />
+                희망농원을 소개합니다
+            </p>
+        </div><!-- .text end -->
+
+        <figure class="main_fruit main_peach main_fruit1"><img src="/image/icon_peach2_dot.png" alt="복숭아" /></figure>
+        <figure class="main_fruit main_grape main_fruit2"><img src="/image/icon_grape1.png" alt="포도" /></figure>
+        <figure class="main_fruit main_peach main_fruit3"><img src="/image/icon_peach_bold.png" alt="복숭아" /></figure>
+        <figure class="main_fruit main_grape main_fruit4"><img src="/image/icon_grape3_dot.png" alt="포도" /></figure>
+        <figure class="main_fruit main_grape main_fruit5"><img src="/image/icon_grape2_dot.png" alt="포도" /></figure>
+
+        <div class="scroll">
+            <div class="line"></div>
+            <div class="dot"></div>
+        </div><!-- .scroll end -->
+
+    </section><!-- .main_visual end -->
+
+
+
+
+
+    <section class="main_introduce">
+        <div class="inner">
+            <figure data-aos="fade-up" data-aos-duration="2000"><img src="/image/farmer_bg.png" alt="과일바구니" /></figure>
+
+            <div class="text">
+                <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">농촌의 자연은 신이 주는 최상의 안식처이며, <strong>건강한 농산물</strong>은 자연이 주는 최고의 선물입니다.</p>
+                <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
+                    <p>희망 유기농 방식으로 재배되는 희망농원의 <strong>건강한 농산물</strong>을 만나보세요.</p>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div><!-- .text end -->
+            
+        </div><!-- .inner end -->
+    </section><!-- .main_introduce end -->
+
+
+
+
+
+    <section class="main_product">
+        <div class="inner">
+            <h2>
+                <strong class="parallax-element left"><b class="b1">H</b>ealthy and <b class="b2">F</b>resh,</strong>
+                <br />
+                <strong class="parallax-element right">희망농원의 상품을 소개합니다</strong>
+            </h2>
+
+            <div class="cover">
+                <a href="#">전체상품 보기</a>
+            </div><!-- .cover end -->
+
+            <div class="list">
+                <div class="item grape">
+                    <div class="picture">
+                        <figure class="painting_color"><img src="/image/painting_grape_color.png" alt="포도" /></figure>
+                        <figure class="painting_line"><img src="/image/painting_grape_line.png" alt="포도" /></figure>
+                        <figure class="photo"><img src="/image/main_grape.png" alt="포도" /></figure>
+                    </div><!-- .picture end -->
+                    <div class="text">
+                        <h3>희망농원 포도</h3>
+                        <p>
+                            황토유황으로 재배한 건강한 포도입니다. 과육이 크고, 과피가 부드러워 식감이 좋습니다.
+                        </p>
+                        <a href="#">더보기</a>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+                <div class="item peach">
+                    <div class="picture">
+                        <figure class="painting_color"><img src="/image/painting_peach_color.png" alt="복숭아" /></figure>
+                        <figure class="painting_line"><img src="/image/painting_peach_line.png" alt="복숭아" /></figure>
+                        <figure class="photo"><img src="/image/main_peach.png" alt="복숭아" /></figure>
+                    </div><!-- .picture end -->
+                    <div class="text">
+                        <h3>희망농원 복숭아</h3>
+                        <p>
+                            준비 중입니다.
+                        </p>
+                        <a href="#">더보기</a>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+                <div class="item jeotgal">
+                    <div class="picture">
+                        <figure class="painting_color"><img src="/image/painting_jeotgal_color.png" alt="젓갈" /></figure>
+                        <figure class="painting_line"><img src="/image/painting_jeotgal_line.png" alt="젓갈" /></figure>
+                        <figure class="photo"><img src="/image/main_jeotgal.png" alt="젓갈" /></figure>
+                    </div><!-- .picture end -->
+                    <div class="text">
+                        <h3>희망농원 젓갈</h3>
+                        <p>
+                            5년 이상 간수를 뺀 천일염을 사용하여, 3년 이상 자연숙성과정을 거친 멸치액젓입니다. 쓴맛이 없는 부드러운 짠맛으로 깊고 풍부한 맛을 느낄 수 있습니다.
+                        </p>
+                        <a href="#">더보기</a>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+
+            </div><!-- .list end -->
+
+        </div><!-- .inner end -->
+    </section>
+
+
+
+
+
+    <section class="main_banner">
+        <div class="text">
+            <div class="inner">
+                <p>
+                    희망농원은 언제나 건강한<br />
+                    먹거리를 약속드립니다&nbsp;&nbsp;:)
+                </p>
+            </div><!-- .inner end -->
+        </div><!-- .text end -->
+    </section><!-- .main_banner end -->
+
+
+
+
+
+    <section class="sns">
+        <div class="text">
+            <h3>INSTAGRAM</h3>
+            <a href="#" target="_blank"><img src="/image/instagram.png" alt="인스타그램" /></a>
+        </div><!-- .text end -->
+
+        <!-- Swiper -->
+        <div class="swiper snsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner1.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner2.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner3.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner4.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner5.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner6.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner7.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img src="/image/banner8.png" alt="sns" />
+                        <p>view<br />more</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- .sns end -->
+
+
+
+
+
+    <footer class="footer">
+        <span class="rights">Copyright 2024. 희망농원. All rights reserved.</span>
+
+        <div class="inner">
+            <ul>
+                <li class="depth1">
+                    <p>Company</p>
+                    <ul class="depth2">
+                        <li>상　호 :　희망농원</li>
+                        <li>대표자 :　윤 상 우</li>
+                        <li>사업자번호 :　548-93-01901</li>
+                        <li>통신판매업 :　제 2024-밀양-0000 호</li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <p>Customer</p>
+                    <ul class="depth2 customer">
+                        <li class="open_guide">배송·환불·교환 안내</li>
+                        <li class="open_privacy">개인정보처리방침</li>
+                        <li><a href="#">고객상담</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <p>Contact</p>
+                    <ul class="depth2">
+                        <li>T.　070-4349-0791</li>
+                        <li>F.　051-747-0440</li>
+                        <li>E.　y0124gs@gmail.com</li>
+                        <li>(627812)　경상남도 밀양시 산외면 다죽리 886-3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- .inner end -->
+
+        <figure class="footer_grape"><img src="/image/footer_grape.png" alt="포도" /></figure>
+        <figure class="footer_peach"><img src="/image/footer_peach.png" alt="복숭아" /></figure>
+
+        <div class="guide">
+            <h2>배송/교환 정보</h2>
+            <figure class="close_guide"><img src="/image/close.png" alt="닫기" /></figure>
+            <div class="text">
+                배송/교환 정보<br />
+                <br />
+                배송<br />
+                배송 안내 입력 전입니다.<br />
+                <br />
+                교환<br />
+                교환/반품 안내 입력 전입니다.
+            </div><!-- .text -->
+        </div><!-- .guide end -->
+
+        <div class="privacy">
+            <h2>개인정보처리방침</h2>
+            <figure class="close_privacy"><img src="/image/close.png" alt="닫기" /></figure>
+            <div class="text">
+                해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.
+            </div><!-- .text end -->
+        </div><!-- .privacy end -->
+
+    </footer><!-- .footer end -->
+
+</body>
+</html>
